@@ -1,0 +1,24 @@
+/* bugSolution.css */
+#myId .container {
+  background-color: lightblue;
+}
+
+.container {
+  background-color: lightgray; /*This will be overriden by above selector*/
+  /* Solution: Increase specificity to match or exceed  */
+  /* Option 1: Use a more specific selector */
+  /* #myId .container { ... } */
+
+  /* Option 2: Use !important (use sparingly) */
+  /* background-color: lightgray !important; */
+}
+
+/*Alternatively, restructure to avoid the conflict*/
+/*Option 3: Separate styles in a more organized way*/
+/* #myId{
+  background-color: lightblue;
+}
+
+.container {
+  background-color: lightgray;
+} */
